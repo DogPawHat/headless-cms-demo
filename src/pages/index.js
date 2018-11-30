@@ -30,7 +30,7 @@ export default class IndexPage extends React.Component {
                     <small>{post.frontmatter.date}</small>
                   </p>
                   <p>
-                    {post.excerpt}
+                    {post.description}
                     <br />
                     <br />
                     <Link className="button is-small" to={post.fields.slug}>
@@ -62,7 +62,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
+          description
           id
           fields {
             slug
