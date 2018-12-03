@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- 8
+deploy:
+  provider: s3
+  access_key_id: AKIAIRN2RRKES5UIWRYQ
+  secret_access_key:
+    secure: jF4EgmmNvboDAgULrF1p5NkMXgLEk2DI7YYe/ZaQXjO5Jy0Wux/XeKo/KGhs+DtiR3imwDeHjxnXMAHY37AKljwHQOMf9Gs1ZKMWDiFMnARE4MhtZxh15a8dAu7DVMuvhV8nE/X+I6JqChhjKUfHGK+y+/HFiSfIDWa3WwnQGfI/1zDJ13h51CtIYxr9+wKl35XdROMRRuVKo+ZL9tfn4fO4ZBihclckC55yuvLd1ftRC2nc3Io5HQpM/SoMMJ7t7t4XjAc0Aoa2oLPFbSTjXOzsyLklKisym+aTlpLmGjUg5fbdmMLdj5PBwrtlvBqHNecHwCvDTLCTaFvcUSQzGoH/1Oz1rXeSjMErmKQ4mD4eBdKjiBS8NVy7kAg7/pzw7oInrOciV0pe5QVZzdHuv21Uo9c4zhEv4wGlz3Z/8D1SV6KiDxA2JAL5fdpIFILlPeNO/z/VVZuNwWjEVWqITEvbTaCFxblv2OmSDaSynhKxJTO4BDfrQS95f4yiGfjMB2E84LnQpgmfUoz4k+vLLvQspSggAfTJyaL2SuxXMTfYEnfZ7g48YWJREzU9sGKLNctIaIMptzVSKioUvFir2v0XUQTLs76y19eTVvp+nlLCAZh9CWguciFej7/GRpNNuGXFkN/LS41hGXtMUShdU5Rk2lGrlnxILg38RMbOguE=
+  bucket: 'the-nearly-headless-blogman'
+  on:
+    repo: DogPawHat/headless-cms-demo
+  skip_cleanup: true
+  region: eu-west-1
+  local_dir: public
+script: gatsby deploy
