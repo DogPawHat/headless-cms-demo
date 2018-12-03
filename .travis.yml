@@ -8,7 +8,6 @@ deploy:
     secure: pVJ8MmpMCYgn3uZ0SAhPlaQ+qfCuTZlJ6L8Z4QtmM/O2/XGlphga1ewaZTdfrQT6zFLwtpL3suL/Hj+pTQQUccBTPF3s71zdMMjwocL1zRClJCNbMWT0aHPl18fYfk+Ow5/LJZ1JLgkD6wVcRm4dQ0PXHyeGwtdYC8cKS07ksNUjLD55VMYyrxxu/QQ3ctZ9yzf0y8O11ezVlL+p2CkVfk1DFBHqYz+tFFakq2QU45QIOuejByf94MYBvMMDZHz0mwzhdoisU5COx0Dx979d7jX3CXygoE3QQsWQPCpXg2eyForZqcDGUIZq+CD85uzAG/CXFWFN++ba+frGQFmhZsipb7VVfM+Evt64CANQ6JROcqqIb11GoZ1VhzyokayQr1GB0AAMRQkw53foSxw/X52TanXcA8CLPO3l2c0b68S2ieYfzkKqVfmTe3sBg1BgfoBIyJuQuhSEkKYFY00FKl/cGrF31IrksI8SnorN/GHP3W7W8SAcczhlKW8W9yzluorIa9u6xeZv1kG43ys/PDv9hf93PpvzXlXq1edHCJfPzkmKykaTHzM1hpF7fGvXQPWSSZsmO48aqK7E8DgBNTypQTJ61CAr48Uq2A2GdM2YdK4XHuHRFJxZHDLkzbUf8cZ/Khv+/WuUaGNjyaZg+9ztU/EYI7qsxEzbGsmT+2U=
   bucket: the-nearly-headless-blogman
   local-dir: public
-  acl: ''
   on:
     repo: DogPawHat/headless-cms-demo
 script: yarn build
