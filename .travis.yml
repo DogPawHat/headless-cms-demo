@@ -12,5 +12,5 @@ deploy:
     repo: DogPawHat/headless-cms-demo
   skip_cleanup: true
   region: eu-west-1
-  acl: public_read
+  acl: private
 script: yarn build
